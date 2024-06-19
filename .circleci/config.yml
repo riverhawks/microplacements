@@ -4,4 +4,8 @@ orbs:
 workflows:
   maven_test:
     jobs:
-      - maven/test
+      - maven/test:
+          matrix:
+            parameters:
+              executor:
+                - j17
