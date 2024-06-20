@@ -1,5 +1,6 @@
+package org.microplacements;
+
 import org.junit.jupiter.api.Test;
-import org.microplacements.Main;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
