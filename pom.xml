@@ -44,6 +44,9 @@
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
+                <configuration>
+                    <reportsDirectory>${session.executionRootDirectory}/target/surefire-reports</reportsDirectory>
+                </configuration>
             </plugin>
         </plugins>
     </build>
