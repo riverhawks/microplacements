@@ -13,8 +13,14 @@ commands:
       - run: mvn clean test
       - maven/process_test_results
 
+jobs:
+  build:
+    executor: java17
+    steps:
+      - build
+    
+
 workflows:
   maven_test:
     jobs:
-      - build:
-          executor: java17
+      - build
