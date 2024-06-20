@@ -8,9 +8,9 @@ public class AnotherTest {
 
     @Test
     void anotherTest() {
-        int expected = true;
+        boolean expected = true;
 
-        int actual = true;
+        boolean actual = true;
 
         assertEquals(expected, actual);
     }
