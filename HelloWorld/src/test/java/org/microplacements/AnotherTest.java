@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test;
 public class AnotherTest {
 
     @Test
-    void meaningOfLife() {
-        int expected = 42;
+    void notTheMeaningOfLife() {
+        int expected = 43;
 
         int actual = Main.getMeaningOfLife();
 
