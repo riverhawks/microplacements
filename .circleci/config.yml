@@ -11,4 +11,4 @@ workflows:
       - maven/test:
           executor: java17
       - store_test_results:
-          path: test-results
+          path: ~/test-results
