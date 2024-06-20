@@ -5,10 +5,16 @@ executors:
       - image: 'cimg/openjdk:17.0'
 orbs:
   maven: circleci/maven@1.3.0
+
+commands:
+  build:
+    steps:
+      - checkout
+      - run: mvn clean test
+      - maven/process_test_results
+
 workflows:
   maven_test:
     jobs:
-      - maven/test:
+      - build:
           executor: java17
-          command: 'clean test'
-      - maven/process_test_results
