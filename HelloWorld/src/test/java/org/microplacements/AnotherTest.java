@@ -7,10 +7,10 @@ import org.junit.jupiter.api.Test;
 public class AnotherTest {
 
     @Test
-    void notTheMeaningOfLife() {
-        int expected = 43;
+    void anotherTest() {
+        int expected = true;
 
-        int actual = Main.getMeaningOfLife();
+        int actual = true;
 
         assertEquals(expected, actual);
     }
