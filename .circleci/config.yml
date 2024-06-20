@@ -10,5 +10,4 @@ workflows:
     jobs:
       - maven/test:
           executor: java17
-  # - store_test_results:
-      # path: ~/test-results
+          command: 'clean test'
