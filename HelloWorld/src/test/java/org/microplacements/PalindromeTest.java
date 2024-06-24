@@ -59,7 +59,7 @@ public class PalindromeTest {
     }
     
     @Test
-    void testNumberInput() {
+    void testNumberIsNotPalindrome() {
         Palindrome p = new Palindrome();
         char[] arr = {'1','2','3'};
 
@@ -68,5 +68,23 @@ public class PalindromeTest {
         assertFalse(actual);
     }
     
+    @Test
+    void testNumberIsPalindrome() {
+        Palindrome p = new Palindrome();
+        char[] arr = {'1','2','1'};
+
+        boolean actual = p.palindromeChecker(arr);
+        
+        assertTrue(actual);
+    }
     
+    @Test
+    void testRepeatedNumberIsPalindrome() {
+        Palindrome p = new Palindrome();
+        char[] arr = {'1','1','1','1','1'};
+
+        boolean actual = p.palindromeChecker(arr);
+        
+        assertTrue(actual);
+    }
 }
