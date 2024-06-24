@@ -8,27 +8,27 @@ import org.junit.jupiter.api.Test;
 
 public class PalindromeTest {
 
-	@Test
+    @Test
     void testWordIsNotPalindrome() {
-		Palindrome p = new Palindrome();
-		char[] arr = {'w','o','r','d'};
+        Palindrome p = new Palindrome();
+        char[] arr = {'w','o','r','d'};
 
         boolean actual = p.palindromeChecker(arr);
         
         assertFalse(actual);
     }
-	
-	@Test
+
+    @Test
     void testWordIsPalindrome() {
-		Palindrome p = new Palindrome();
-		char[] arr = {'a','n','n','a'};
+        Palindrome p = new Palindrome();
+        char[] arr = {'a','n','n','a'};
 
         boolean actual = p.palindromeChecker(arr);
         
         assertTrue(actual);
     }
-	
-	@Test
+    
+    @Test
     void testRacecarIsPalindrome() {
 		Palindrome p = new Palindrome();
 		char[] arr = {'r','a','c','e','c','a','r'};
