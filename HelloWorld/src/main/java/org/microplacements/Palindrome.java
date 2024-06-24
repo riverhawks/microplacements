@@ -29,7 +29,7 @@ public class Palindrome {
             }
         }
         
-     return true;
+        return true;
     }
     
     private int getNumIterations(int len) {
