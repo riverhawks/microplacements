@@ -7,14 +7,9 @@ public class Palindrome {
         if(word.length == 0) { 
             return true; 
         }
-        char[] reversedWord = new char[word.length];
-        int i = word.length - 1;
-        for(char letter : word) {
-            reversedWord[i] = letter;
-            i--;
-        }
+        char[] reversedWord = reverse(word);
 
-        for(i = word.length -1; i >= 0; i--) {
+        for(int i = word.length -1; i >= 0; i--) {
             if(word[i] != reversedWord[i]) {
                 return false;
             }
@@ -42,5 +37,15 @@ public class Palindrome {
             return (len - 1) / 2;
         }
         return len / 2;
+    }
+    
+    public char[] reverse(char[] word) {
+        char[] reversedWord = new char[word.length];
+        int i = word.length - 1;
+        for(char letter : word) {
+            reversedWord[i] = letter;
+            i--;
+        }
+        return reversedWord;
     }
 }
