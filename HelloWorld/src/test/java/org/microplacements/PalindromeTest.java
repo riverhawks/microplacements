@@ -30,43 +30,43 @@ public class PalindromeTest {
     
     @Test
     void testRacecarIsPalindrome() {
-		Palindrome p = new Palindrome();
-		char[] arr = {'r','a','c','e','c','a','r'};
+        Palindrome p = new Palindrome();
+        char[] arr = {'r','a','c','e','c','a','r'};
 
         boolean actual = p.palindromeChecker(arr);
         
         assertTrue(actual);
     }
-	
-	@Test
+    
+    @Test
     void testNoInput() {
-		Palindrome p = new Palindrome();
-		char[] arr = {};
+        Palindrome p = new Palindrome();
+        char[] arr = {};
 
         boolean actual = p.palindromeChecker(arr);
         
         assertTrue(actual);
     }
-	
-	@Test
+    
+    @Test
     void testOneInput() {
-		Palindrome p = new Palindrome();
-		char[] arr = {'a'};
+        Palindrome p = new Palindrome();
+        char[] arr = {'a'};
 
         boolean actual = p.palindromeChecker(arr);
         
         assertTrue(actual);
     }
-	
-	@Test
+    
+    @Test
     void testNumberInput() {
-		Palindrome p = new Palindrome();
-		char[] arr = {'1','2','3'};
+        Palindrome p = new Palindrome();
+        char[] arr = {'1','2','3'};
 
         boolean actual = p.palindromeChecker(arr);
         
         assertFalse(actual);
     }
-	
-	
+    
+    
 }
