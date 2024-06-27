@@ -1,5 +1,7 @@
 package org.microplacements;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.junit.jupiter.api.Test;
 
 public class CharacterPlateauTest {
@@ -8,8 +10,8 @@ public class CharacterPlateauTest {
     void testPlateauIsEmpty() {
         CharacterPlateau charPlateau = new CharacterPlateau();
         String testWord = "";
-        int expected = 0;
-        int actual = charPlateau.characterPlateauCounter(testWord);
+        String expected = "";
+        String actual = charPlateau.characterPlateauCounter(testWord);
         assertEquals(expected, actual);
     }
     
@@ -17,8 +19,8 @@ public class CharacterPlateauTest {
     void testPlateauIsOne() {
         CharacterPlateau charPlateau = new CharacterPlateau();
         String testWord = "a";
-        int expected = 1;
-        int actual = charPlateau.characterPlateauCounter(testWord);
+        String expected = "a";
+        String actual = charPlateau.characterPlateauCounter(testWord);
         assertEquals(expected, actual);
     }
     
@@ -26,17 +28,18 @@ public class CharacterPlateauTest {
     void testPlateauIsFive() {
         CharacterPlateau charPlateau = new CharacterPlateau();
         String testWord = "aaaaeeeeenwen";
-        int expected = 5;
-        int actual = charPlateau.characterPlateauCounter(testWord);
+        String expected = "eeeee";
+        String actual = charPlateau.characterPlateauCounter(testWord);
         assertEquals(expected, actual);
+       
     }
     
     @Test
     void testPlateauIsTen() {
         CharacterPlateau charPlateau = new CharacterPlateau();
         String testWord = "zzzzzzzzzz";
-        int expected = 10;
-        int actual = charPlateau.characterPlateauCounter(testWord);
+        String expected = "zzzzzzzzzz";
+        String actual = charPlateau.characterPlateauCounter(testWord);
         assertEquals(expected, actual);
     }
     
@@ -44,8 +47,8 @@ public class CharacterPlateauTest {
     void testPlateauIsNumbers() {
         CharacterPlateau charPlateau = new CharacterPlateau();
         String testWord = "122333";
-        int expected = 3;
-        int actual = charPlateau.characterPlateauCounter(testWord);
+        String expected = "333";
+        String actual = charPlateau.characterPlateauCounter(testWord);
         assertEquals(expected, actual);
     }
 }
